@@ -1,0 +1,7 @@
+{
+  "name": "Cupcake de teste",
+  "category": "Bolos",
+  "price": 12.5,
+  "stock": 20,
+  "minimum_stock": 5
+}

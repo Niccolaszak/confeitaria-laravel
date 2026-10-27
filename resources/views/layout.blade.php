@@ -8,7 +8,7 @@
     </style>
 </head>
 <body>
-<nav><strong>🍰 Doce Gestão</strong><a href="{{ url('/') }}">Início</a><a href="{{ route('produtos.index') }}">Estoque</a><a href="{{ route('clientes.index') }}">Clientes</a><a href="{{ route('pedidos.index') }}">Pedidos</a><a href="{{ route('entregas.index') }}">Fretes</a></nav>
+<nav data-cy="main-nav"><strong data-cy="brand">🍰 Doce Gestão</strong><a data-cy="nav-home" href="{{ url('/') }}">Início</a><a data-cy="nav-products" href="{{ route('produtos.index') }}">Estoque</a><a data-cy="nav-customers" href="{{ route('clientes.index') }}">Clientes</a><a data-cy="nav-orders" href="{{ route('pedidos.index') }}">Pedidos</a><a data-cy="nav-deliveries" href="{{ route('entregas.index') }}">Fretes</a></nav>
 <main class="container">
     @if(session('success'))<div class="alert">{{ session('success') }}</div>@endif
     @if($errors->any())<div class="alert" style="background:#ffe5e5;color:#8d2525"><strong>Revise os campos:</strong><ul>@foreach($errors->all() as $error)<li>{{ $error }}</li>@endforeach</ul></div>@endif

@@ -1,0 +1,7 @@
+{
+  "name": "Cliente Cypress",
+  "email": "cypress@example.com",
+  "phone": "11987654321",
+  "address": "Rua dos Testes, 10",
+  "city": "São Paulo"
+}
